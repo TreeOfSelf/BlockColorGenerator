@@ -36,7 +36,7 @@ public class ColorDumper {
             MapColor mapColor = defaultState.getMapColor(world, dummyPos);
             int mapColorInt = mapColor.color;
 
-            String colorName = mapColor.toString();
+            String colorName = MapColorToString.get(mapColor);
             int r = (mapColorInt >> 16) & 0xFF;
             int g = (mapColorInt >> 8) & 0xFF;
             int b = mapColorInt & 0xFF;

@@ -4,137 +4,74 @@ import net.minecraft.block.MapColor;
 
 public class MapColorToString {
     static String get(MapColor mapColor) {
+
         if (mapColor == null) {
-            return "Unknown";
+            return "CLEAR";
         }
 
-        switch (mapColor.id) {
-            case 0:
-                return "Clear";
-            case 1:
-                return "Pale Green";
-            case 2:
-                return "Pale Yellow";
-            case 3:
-                return "White Gray";
-            case 4:
-                return "Bright Red";
-            case 5:
-                return "Pale Purple";
-            case 6:
-                return "Iron Gray";
-            case 7:
-                return "Dark Green";
-            case 8:
-                return "White";
-            case 9:
-                return "Light Blue Gray";
-            case 10:
-                return "Dirt Brown";
-            case 11:
-                return "Stone Gray";
-            case 12:
-                return "Water Blue";
-            case 13:
-                return "Oak Tan";
-            case 14:
-                return "Off White";
-            case 15:
-                return "Orange";
-            case 16:
-                return "Magenta";
-            case 17:
-                return "Light Blue";
-            case 18:
-                return "Yellow";
-            case 19:
-                return "Lime";
-            case 20:
-                return "Pink";
-            case 21:
-                return "Gray";
-            case 22:
-                return "Light Gray";
-            case 23:
-                return "Cyan";
-            case 24:
-                return "Purple";
-            case 25:
-                return "Blue";
-            case 26:
-                return "Brown";
-            case 27:
-                return "Green";
-            case 28:
-                return "Red";
-            case 29:
-                return "Black";
-            case 30:
-                return "Gold";
-            case 31:
-                return "Diamond Blue";
-            case 32:
-                return "Lapis Blue";
-            case 33:
-                return "Emerald Green";
-            case 34:
-                return "Spruce Brown";
-            case 35:
-                return "Dark Red";
-            case 36:
-                return "Terracotta White";
-            case 37:
-                return "Terracotta Orange";
-            case 38:
-                return "Terracotta Magenta";
-            case 39:
-                return "Terracotta Light Blue";
-            case 40:
-                return "Terracotta Yellow";
-            case 41:
-                return "Terracotta Lime";
-            case 42:
-                return "Terracotta Pink";
-            case 43:
-                return "Terracotta Gray";
-            case 44:
-                return "Terracotta Light Gray";
-            case 45:
-                return "Terracotta Cyan";
-            case 46:
-                return "Terracotta Purple";
-            case 47:
-                return "Terracotta Blue";
-            case 48:
-                return "Terracotta Brown";
-            case 49:
-                return "Terracotta Green";
-            case 50:
-                return "Terracotta Red";
-            case 51:
-                return "Terracotta Black";
-            case 52:
-                return "Dull Red";
-            case 53:
-                return "Dull Pink";
-            case 54:
-                return "Dark Crimson";
-            case 55:
-                return "Teal";
-            case 56:
-                return "Dark Aqua";
-            case 57:
-                return "Dark Dull Pink";
-            case 58:
-                return "Bright Teal";
-            case 59:
-                return "Deepslate Gray";
-            case 60:
-                return "Raw Iron Pink";
-            case 61:
-                return "Lichen Green";
-            default:
-                return "Unknown";
-        }
+        return switch (mapColor.id) {
+            case 1 -> "PALE_GREEN";
+            case 2 -> "PALE_YELLOW";
+            case 3 -> "WHITE_GRAY";
+            case 4 -> "BRIGHT_RED";
+            case 5 -> "PALE_PURPLE";
+            case 6 -> "IRON_GRAY";
+            case 7 -> "DARK_GREEN";
+            case 8 -> "WHITE";
+            case 9 -> "LIGHT_BLUE_GRAY";
+            case 10 -> "DIRT_BROWN";
+            case 11 -> "STONE_GRAY";
+            case 12 -> "WATER_BLUE";
+            case 13 -> "OAK_TAN";
+            case 14 -> "OFF_WHITE";
+            case 15 -> "ORANGE";
+            case 16 -> "MAGENTA";
+            case 17 -> "LIGHT_BLUE";
+            case 18 -> "YELLOW";
+            case 19 -> "LIME";
+            case 20 -> "PINK";
+            case 21 -> "GRAY";
+            case 22 -> "LIGHT_GRAY";
+            case 23 -> "CYAN";
+            case 24 -> "PURPLE";
+            case 25 -> "BLUE";
+            case 26 -> "BROWN";
+            case 27 -> "GREEN";
+            case 28 -> "RED";
+            case 29 -> "BLACK";
+            case 30 -> "GOLD";
+            case 31 -> "DIAMOND_BLUE";
+            case 32 -> "LAPIS_BLUE";
+            case 33 -> "EMERALD_GREEN";
+            case 34 -> "SPRUCE_BROWN";
+            case 35 -> "DARK_RED";
+            case 36 -> "TERRACOTTA_WHITE";
+            case 37 -> "TERRACOTTA_ORANGE";
+            case 38 -> "TERRACOTTA_MAGENTA";
+            case 39 -> "TERRACOTTA_LIGHT_BLUE";
+            case 40 -> "TERRACOTTA_YELLOW";
+            case 41 -> "TERRACOTTA_LIME";
+            case 42 -> "TERRACOTTA_PINK";
+            case 43 -> "TERRACOTTA_GRAY";
+            case 44 -> "TERRACOTTA_LIGHT_GRAY";
+            case 45 -> "TERRACOTTA_CYAN";
+            case 46 -> "TERRACOTTA_PURPLE";
+            case 47 -> "TERRACOTTA_BLUE";
+            case 48 -> "TERRACOTTA_BROWN";
+            case 49 -> "TERRACOTTA_GREEN";
+            case 50 -> "TERRACOTTA_RED";
+            case 51 -> "TERRACOTTA_BLACK";
+            case 52 -> "DULL_RED";
+            case 53 -> "DULL_PINK";
+            case 54 -> "DARK_CRIMSON";
+            case 55 -> "TEAL";
+            case 56 -> "DARK_AQUA";
+            case 57 -> "DARK_DULL_PINK";
+            case 58 -> "BRIGHT_TEAL";
+            case 59 -> "DEEPSLATE_GRAY";
+            case 60 -> "RAW_IRON_PINK";
+            case 61 -> "LICHEN_GREEN";
+            default -> "CLEAR";
+        };
     }
 }
